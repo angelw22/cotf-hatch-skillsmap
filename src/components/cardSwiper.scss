@@ -1,0 +1,86 @@
+@import '~swiper/css/swiper.css';
+
+.cardsWrapper > .swiper-container > .swiper-wrapper {
+  margin-top: -10vh
+}
+
+.swiper-slide {
+	width: auto;
+	height: 250px;
+	pointer-events: auto;
+
+	background-size: contain;
+	&.HELLLOOO {
+		width: 100vw;
+		.wrapper {
+			width:200%;
+			
+		}
+
+		&.swiper-slide-active {
+			height: 320px;
+			.swiper-slide {
+				height: 250px;
+			}
+			.swiper-slide-active {
+					height: 320px;
+			}
+		}
+	}
+
+	img {
+		height:100%
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.swiper-slide {
+		width: 160px;
+		height: 180px;
+
+		background-size: contain;
+		&.HELLLOOO {
+			width: 100vw;
+			.wrapper {
+				width:200%
+			}
+			.swiper-slide {
+				filter: brightness(40%);
+			}
+
+			&.swiper-slide-active {
+				height: 75vw;
+				.swiper-container > .swiper-wrapper {
+					margin-left: -55px;
+				}
+				.swiper-slide {
+						height: 70vw;
+						filter: brightness(75%);
+				}
+				.swiper-slide-active {
+						height: 75vw;
+						filter: brightness(100%);
+				}
+			}
+		}
+
+		img {
+			height:100%;
+			background-color: lightgrey;
+			border-radius: 12px;
+		}
+	}
+}
+
+
+
+
+.swiper-container-vertical {
+  height: 90vh;
+}
+
+// .swiperContainer {
+//     position: fixed;
+//     height: 200px;
+//     bottom: 0;
+// }
